@@ -20,6 +20,22 @@ header{
   text-align: center;
 }
 
-tabRegular{
+tabRegular {
   color: white;
-  
+}
+
+tab{
+    color: white;
+    background: dodgerblue;
+    margin: 0;
+    padding: 15px;
+    cursor: pointer;
+    transition: background 0.2s ease-in-out;
+    font-family: "Helvetica Neue";
+    display: inline-block;
+    height: 50px
+}
+
+tab:hover {
+    background: #1c83e9
+}

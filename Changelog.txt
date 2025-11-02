@@ -1,7 +1,8 @@
 #CHANGELOG
 
 # 01/11/2025 - Initial Release (very buggy!)
-# 02/11/2025 - v1.2 (yeah skipped 1.1) fixed some bugs such as editing problem and other issues
-             - v1.2.5 fixed some issues with the target pointers preventing shooting
-             - v1.2.8 removed robot tilt detection as it caused false alarms
-             - v1.2.8 fixed steal skin
+# 02/11/2025 - v1.2 (Yeah skipped 1.1) Fixed some bugs such as editing problem and other issues.
+             - v1.2.5 Fixed some issues with the target pointers preventing shooting.
+             - v1.2.8 Removed robot tilt detection as it caused false alarms.
+             - v1.2.8 Fixed steal skin.
+             - v1.3 (Last update of the day, it's 9:30 PM, tomorrow I have school) Biggest update: added setting bar color and whitelisting.

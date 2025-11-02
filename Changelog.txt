@@ -4,3 +4,4 @@
 # 02/11/2025 - v1.2 (yeah skipped 1.1) fixed some bugs such as editing problem and other issues
              - v1.2.5 fixed some issues with the target pointers preventing shooting
              - v1.2.8 removed robot tilt detection as it caused false alarms
+             - v1.2.8 fixed steal skin

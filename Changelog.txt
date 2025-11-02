@@ -1,0 +1,4 @@
+#CHANGELOG
+
+# 01/11/2025 - Initial Release (very buggy!)
+# 02/11/2025 - v1.2 (yeah skipped 1.1) fixed some bugs such as editing problem and other issues

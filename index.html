@@ -1,63 +1,10 @@
 <!DOCTYPE html>
 <html>
     <head>
+        <link rel="stylesheet" href="/assets/css/style.css">
         <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Quicksand">
     </head>
-    <!-- No style.css currently-->
-    <style type="text/css">
-        .header {
-            background-color: midnightblue;
-            width: 100%;
-            height: 70px;
-            display: flex;
-            justify-content: center;
-        }
-        span, h2, h3, h4, h5, h6, p, .text{
-            font-family: Quicksand;
-            color: white
-        }
-        h1 {
-            color: white;
-            margin-right: 30px;
-            padding-bottom: 6px;
-            font-family: Quicksand
-        }
-        .tab {
-            background: midnightblue;
-            transition: 0.3s background ease-in-out;
-            display: inline-block;
-            text-align: center;
-            cursor: pointer;
-            position: relative;
-            margin: 0;
-            align-self: flex-start;
-            height: 100%;
-            padding: 0px 15px 0px 15px;
-        }
-        .tab:hover {
-            background: #29298C;
-        }
-        .container {
-            margin: 10px;
-            margin-left: 20px
-        }
-        .button {
-            background: midnightblue;
-            transition: 0.3s background ease-in-out;
-            margin-top: 15px;
-            margin-bottom: 15px;
-            border-radius: 10px;
-            height: 30px;
-            padding-left: 20px;
-            display: flex;
-            align-items: center;
-            width: 50%;
-            cursor: pointer
-        }
-        .button:hover {
-            background: #29298C;
-        }
-    </style>
+    <!-- Added CSS -->
     <body style="background-color: #2b2b2b; margin: 0; padding: 0">
         <div class="header">
             <h1>RD Hack Clients</h1>
@@ -71,7 +18,13 @@
             <span>This is the bookmarklet for loading the client. Drag it to your bookmarks bar, then, on Scratch or Turbowarp,  click on it and it should display a popup saying something along the lines of "Injecting --- into Scratch". Then, wait for the client to load.</span>
             <br>
             <div class="button text">
-                <a href='javascript:(function()%7B    /* Made by anonynmous-exdash, Com_engineer_Tom and directdestroyer1. */    let id = "https://directprogrammer1.github.io/HackClients/assets/ShadowClient/ShadowClient-v1.3.sb3";        function getScratchVM() %7B        if (window.location.hostname == "turbowarp.org") %7B        return window.vm;    %7D    const appElement = document.getElementById("app");    if (!appElement) %7B        return null;    %7D    const reactContainerKey = Object.keys(appElement).find(key => key.startsWith("__reactContainer$"));    if (reactContainerKey) %7B        try %7B            const rootFiber = appElement%5BreactContainerKey%5D;            const AppFiber = rootFiber.child;            const store = AppFiber?.pendingProps?.store %7C%7C AppFiber?.memoizedProps?.store;                        if (store) %7B                return store.getState().scratchGui.vm;            %7D        %7D catch (e) %7B            console.warn("%5BINJECTOR%5D: React root container search failed. ", e);        %7D    %7D    if (appElement._reactRootContainer) %7B        try %7B            const store = appElement._reactRootContainer._internalRoot.current.child.pendingProps.store;            return store.getState().scratchGui.vm;        %7D catch (e) %7B            console.warn("%5BINJECTOR%5D: React 17 Legacy path failed:", e);        %7D    %7D    console.error("%5BINJECTOR%5D: Failed to find Scratch%27s VM.");    return null;%7D    if (typeof vm === "undefined") %7B           vm = getScratchVM();    %7D    vm.runtime.canAddCloudVariable = function () %7B return true; %7D;    alert("Injecting ShadowClient into Scratch. Please wait...");    fetch(id)        .then(r => r.arrayBuffer())        .then(buffer => vm.loadProject(buffer))        .then(() => %7B            console.log("Loaded project!");            alert("Loaded project!");        %7D)        .catch(error => %7B            alert("Something went wrong!");            console.log("Error loading project;", error);        %7D);%7D)();''>ShadowClient injector</a>
+                <a class="text" href='javascript:(function()%7B    /* Made by anonynmous-exdash, Com_engineer_Tom and directdestroyer1. */    let id = "https://directprogrammer1.github.io/HackClients/assets/ShadowClient/ShadowClient-v1.3.sb3";        function getScratchVM() %7B        if (window.location.hostname == "turbowarp.org") %7B        return window.vm;    %7D    const appElement = document.getElementById("app");    if (!appElement) %7B        return null;    %7D    const reactContainerKey = Object.keys(appElement).find(key => key.startsWith("__reactContainer$"));    if (reactContainerKey) %7B        try %7B            const rootFiber = appElement%5BreactContainerKey%5D;            const AppFiber = rootFiber.child;            const store = AppFiber?.pendingProps?.store %7C%7C AppFiber?.memoizedProps?.store;                        if (store) %7B                return store.getState().scratchGui.vm;            %7D        %7D catch (e) %7B            console.warn("%5BINJECTOR%5D: React root container search failed. ", e);        %7D    %7D    if (appElement._reactRootContainer) %7B        try %7B            const store = appElement._reactRootContainer._internalRoot.current.child.pendingProps.store;            return store.getState().scratchGui.vm;        %7D catch (e) %7B            console.warn("%5BINJECTOR%5D: React 17 Legacy path failed:", e);        %7D    %7D    console.error("%5BINJECTOR%5D: Failed to find Scratch%27s VM.");    return null;%7D    if (typeof vm === "undefined") %7B           vm = getScratchVM();    %7D    vm.runtime.canAddCloudVariable = function () %7B return true; %7D;    alert("Injecting ShadowClient into Scratch. Please wait...");    fetch(id)        .then(r => r.arrayBuffer())        .then(buffer => vm.loadProject(buffer))        .then(() => %7B            console.log("Loaded project!");            alert("Loaded project!");        %7D)        .catch(error => %7B            alert("Something went wrong!");            console.log("Error loading project;", error);        %7D);%7D)();''>ShadowClient injector</a>
+            </div>
+            <br>
+            <span>Here is the link to download the raw .sb3 file. It is useless in-game unless you wish to import the client and add new features.</span>
+            <br>
+            <div class="button text">
+                <a class="text" href='https://directprogrammer1.github.io/HackClients/assets/ShadowClient/ShadowClient-v1.3.sb3'>ShadowClient v1.3 (raw)</a>
             </div>
         </div>
     </body>

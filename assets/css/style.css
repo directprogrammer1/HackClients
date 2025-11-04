@@ -18,7 +18,7 @@ h1 {
     align-self: center;
 }
 .tab {
-    background: midnightblue;
+    background: #005bf7;
     transition: 0.3s background ease-in-out;
     display: inline-block;
     text-align: center;
@@ -30,14 +30,14 @@ h1 {
     padding: 0px 15px 0px 15px;
 }
 .tab:hover {
-    background: #29298C;
+    background: #004fd6;
 }
 .container {
     margin: 10px;
     margin-left: 20px
 }
 .button {
-    background: midnightblue;
+    background: #005bf7;
     transition: 0.3s background ease-in-out;
     margin-top: 15px;
     margin-bottom: 15px;
@@ -50,5 +50,5 @@ h1 {
     cursor: pointer
 }
 .button:hover {
-    background: #29298C;
+    background: #004fd6;
 }

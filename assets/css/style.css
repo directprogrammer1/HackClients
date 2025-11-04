@@ -1,54 +1,54 @@
-        .header {
-            background-color: midnightblue;
-            width: 100%;
-            height: fit-content;
-            display: flex;
-            justify-content: center;
-        }
-        span, h2, h3, h4, h5, h6, p, .text{
-            font-family: Quicksand;
-            color: white
-        }
-        h1 {
-            color: white;
-            margin-right: 30px;
-            padding-bottom: 6px;
-            font-family: Quicksand;
-            display: flex;
-            align-self: center;
-        }
-        .tab {
-            background: midnightblue;
-            transition: 0.3s background ease-in-out;
-            display: inline-block;
-            text-align: center;
-            cursor: pointer;
-            position: relative;
-            margin: 0;
-            align-self: flex-start;
-            height: 100%;
-            padding: 0px 15px 0px 15px;
-        }
-        .tab:hover {
-            background: #29298C;
-        }
-        .container {
-            margin: 10px;
-            margin-left: 20px
-        }
-        .button {
-            background: midnightblue;
-            transition: 0.3s background ease-in-out;
-            margin-top: 15px;
-            margin-bottom: 15px;
-            border-radius: 10px;
-            height: 30px;
-            padding-left: 20px;
-            display: flex;
-            align-items: center;
-            width: 50%;
-            cursor: pointer
-        }
-        .button:hover {
-            background: #29298C;
-        }
+.header {
+    background-color: midnightblue;
+    width: 100%;
+    height: fit-content;
+    display: flex;
+    justify-content: center;
+}
+span, h2, h3, h4, h5, h6, p, .text{
+    font-family: Quicksand;
+    color: white
+}
+h1 {
+    color: white;
+    margin-right: 30px;
+    padding-bottom: 6px;
+    font-family: Quicksand;
+    display: flex;
+    align-self: center;
+}
+.tab {
+    background: midnightblue;
+    transition: 0.3s background ease-in-out;
+    display: inline-block;
+    text-align: center;
+    cursor: pointer;
+    position: relative;
+    margin: 0;
+    align-self: flex-start;
+    height: 100%;
+    padding: 0px 15px 0px 15px;
+}
+.tab:hover {
+    background: #29298C;
+}
+.container {
+    margin: 10px;
+    margin-left: 20px
+}
+.button {
+    background: midnightblue;
+    transition: 0.3s background ease-in-out;
+    margin-top: 15px;
+    margin-bottom: 15px;
+    border-radius: 10px;
+    height: 30px;
+    padding-left: 20px;
+    display: flex;
+    align-items: center;
+    width: -webkit-fill-available;
+    cursor: pointer
+}
+.button:hover {
+    background: #29298C;
+}

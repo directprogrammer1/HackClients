@@ -83,5 +83,6 @@ a {
     display: flex;
     align-items: center;
     justify-content: center;
-    color: dodgerblue
+    color: dodgerblue;
+    text-align: center
 }
